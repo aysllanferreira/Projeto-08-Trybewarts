@@ -107,7 +107,8 @@ const createObservation = () => {
 };
 
 const sendData = () => {
-  btn2.addEventListener('click', () => {
+  btn2.addEventListener('click', (ev) => {
+    ev.preventDefault();
     createPara();
     createParaText();
     createAvaliation();
